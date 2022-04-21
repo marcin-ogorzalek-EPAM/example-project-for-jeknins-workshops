@@ -11,5 +11,11 @@ pipeline {
                 sh 'java --version'
             }
         }
+        stage('build') {
+            steps {
+                sh 'mvn compile'
+                sh 'mvn package'
+            }
+        }
     }
 }
