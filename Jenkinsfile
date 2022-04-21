@@ -1,9 +1,9 @@
 pipeline {
-    agent any
-    tools {
-      maven 'Maven'
-      jdk 'Java'
-    }
+    agent { docker { image 'maven:3.6.3' } }
+//     tools {
+//       maven 'Maven'
+//       jdk 'Java'
+//     }
     options {
         buildDiscarder(logRotator(daysToKeepStr: '1', numToKeepStr: '5', artifactDaysToKeepStr: '2', artifactNumToKeepStr: '1'))
     }
