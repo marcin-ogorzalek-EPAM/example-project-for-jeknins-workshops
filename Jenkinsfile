@@ -1,8 +1,8 @@
 pipeline {
     agent any
     tools {
-      maven 'My Maven'
-      jdk 'my-jdk'
+      maven 'Maven'
+      jdk 'Java'
     }
     options {
         buildDiscarder(logRotator(daysToKeepStr: '1', numToKeepStr: '5', artifactDaysToKeepStr: '2', artifactNumToKeepStr: '1'))
