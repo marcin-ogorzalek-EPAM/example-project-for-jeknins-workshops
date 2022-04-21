@@ -5,9 +5,10 @@ pipeline {
       jdk 'my-jdk'
     }
     stages {
-        stage('build') {
+        stage('env info') {
             steps {
                 sh 'mvn --version'
+                sh 'java --version'
             }
         }
     }
