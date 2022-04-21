@@ -9,6 +9,6 @@ package com.epam.q3ap.jenkinsworkshops;
  */
 class Example {
   public static void main(String[] args) {
-    System.out.println("Dowolna zmian w plikach jawowych");
+    System.out.println("Inne zmiany w kodzie");
   }
 }
