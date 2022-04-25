@@ -24,6 +24,7 @@ pipeline {
             steps {
                 sleep(time: 1, unit: 'MINUTES')
                 echo('Hello world')
+                echo('Test change')
             }
         }
     }
